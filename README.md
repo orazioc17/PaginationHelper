@@ -8,7 +8,7 @@ For this exercise you will be strengthening your page-fu mastery. You will compl
 The class is designed to take in an array of values and an integer indicating how many items will be allowed per each page. The types of values contained within the collection/array are not relevant.
 
 The following are some examples of how this class is used:
-
+```kotlin
 val helper = PaginationHelper<Char>(listOf('a', 'b', 'c', 'd', 'e', 'f'), 4)
 helper.pageCount //should == 2
 helper.itemCount //should == 6
@@ -21,3 +21,4 @@ helper.pageIndex(5) //should == 1 (zero based index)
 helper.pageIndex(2) //should == 0
 helper.pageIndex(20) //should == -1
 helper.pageIndex(-10) //should == -1
+```
